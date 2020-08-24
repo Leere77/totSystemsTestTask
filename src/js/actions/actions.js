@@ -1,0 +1,8 @@
+export const GET_USER_DATA = 'GET_USER_DATA';
+export const CHANGE_USER_STATUS = 'CHANGE_USER_STATUS';
+export const USER_LOGOUT = 'USER_LOGOUT';
+
+export const GET_MESSAGES = 'GET_MESSAGES';
+export const POST_MESSAGE = 'POST_MESSAGE';
+export const UPDATE_MESSAGE = 'UPDATE_MESSAGE';
+export const DELETE_MESSAGE = 'DELETE_MESSAGE';

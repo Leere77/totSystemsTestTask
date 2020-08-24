@@ -1,0 +1,71 @@
+.left-сontainer {
+    flex: 0 0 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(50,50,50,.08);
+
+    @media (max-width: 645px) {
+        flex: 1 1 250px;
+    }
+}
+
+.user {
+    &__name {
+        font-weight: 600;
+        font-size: 1.75rem;
+        line-height: 3.5rem;
+    }
+
+    &__setIcon {
+        font-size: 0.75rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+        color: #646464;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+
+.nav__link {
+    display: block;
+    padding: 1rem 0;
+    color: #7b7b7b;
+    transition: color 0.3s ease-in-out;
+
+    &:hover, &--current {
+        color: #000000;
+    }
+}
+
+.setIcon {
+    position: absolute;
+    max-width: 270px;
+    background: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+
+    &--hidden {
+        line-height: 0px;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    &--active {
+        border: 1px solid #dadada;
+        line-height: 2rem;
+        padding: 1rem 0;
+        opacity: 1;
+    }
+}
+
+.icon {
+    margin: 1rem;
+    cursor: pointer;
+}

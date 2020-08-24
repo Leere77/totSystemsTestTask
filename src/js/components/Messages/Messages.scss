@@ -1,0 +1,81 @@
+.right-container {
+    padding: 1rem;
+    flex: 1 1 400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.start-caption {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.messages-view {
+    height: 85%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+}
+
+.message {
+    &__owner {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    &__date {
+        font-size: 0.75rem;
+        padding-bottom: 0.5rem;
+        color: #5f5f5f;
+    }
+
+    &__content {
+        padding-bottom: 2rem;
+        white-space: pre-line;
+        line-height: 1.5rem;
+    }
+
+    &__edit {
+        color: #484848;
+        font-size: 12px;
+        font-weight: normal;
+        cursor: pointer;
+
+        &::after {
+            content: " | ";
+            cursor: initial;
+        }
+    }
+
+    &__delete {
+        color: #9c9c9c;
+        font-size: 12px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+}
+
+.messages-input {
+    // height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__textarea {
+        flex: 1 1 250px;
+        height: 75px;
+        margin: 1rem 0;
+    }
+
+    &__send-btn {
+        flex: 0 0 100px;
+        margin-left: 1rem;
+        background: white;
+        border: 1px solid;
+        padding: 1rem;
+        border-radius: 100px;
+        cursor: pointer;
+        outline: none;
+    }
+}
