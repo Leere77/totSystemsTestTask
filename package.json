@@ -19,7 +19,7 @@
     "semantic-ui-react": "^1.2.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --open --mode production",
     "build": "webpack --mode production"
   },
   "eslintConfig": {
