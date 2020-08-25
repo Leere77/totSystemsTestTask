@@ -19,8 +19,8 @@
     "semantic-ui-react": "^1.2.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": "react-app"

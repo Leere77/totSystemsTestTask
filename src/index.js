@@ -10,13 +10,14 @@ import './css/main.scss';
 import rootReducer from './js/reducers';
 import App from './js/components/App/App';
 
+const BASE_URL = process.env.BASE_URL;
 
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
   <React.StrictMode>
       <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={BASE_URL}>
         <App />
       </BrowserRouter>
     </Provider>

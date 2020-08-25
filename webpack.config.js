@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const mode = process.argv[process.argv.findIndex(arg => arg == '--mode') + 1];
+
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'src', 'index.js'),
@@ -33,7 +35,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public', 'index.html') }),
     new webpack.EnvironmentPlugin({
-      API_URL: 'https://dry-ravine-75918.herokuapp.com'
+      API_URL: 'https://dry-ravine-75918.herokuapp.com',
+      BASE_URL: mode == 'production' ? '/totSystemsTestTask/dist' : ''
     })
   ],
   devServer: {

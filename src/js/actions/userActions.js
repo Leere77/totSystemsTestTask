@@ -16,7 +16,6 @@ const requestOptions = {
 
 export const getUserData = ({ userName, password }) =>
     async dispatch => {
-        console.log(process)
         try {
             const request = {
                 ...requestOptions,
