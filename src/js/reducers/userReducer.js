@@ -11,8 +11,6 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-    console.log('userReduccer')
-    console.log(state, action)
     switch (action.type) {
         case GET_USER_DATA:
             return {
