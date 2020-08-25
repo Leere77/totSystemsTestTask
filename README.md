@@ -16,4 +16,4 @@
 - mongoose
 
 Деплой на github pages:
-[Тут](http://github.com)
+[Тут](https://leere77.github.io/totSystemsTestTask/dist)

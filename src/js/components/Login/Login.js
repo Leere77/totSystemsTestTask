@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import './Login.scss';
 import { getUserData } from '../../actions/userActions';
-import { Redirect } from 'react-router-dom';
 
 function Login({ error, getUserData, loggedIn }) {
     if (loggedIn) 
         return <Redirect to="/" />
 
-    const [userName, setUserName] = useState('user1');
-    const [password, setPassword] = useState('pass1');
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
 
     function submit(e) {
         e.preventDefault();
